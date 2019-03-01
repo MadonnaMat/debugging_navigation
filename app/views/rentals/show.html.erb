@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @rental.driver.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= "*" * @rental.driver.age %>
+</p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @rental.car.name %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @rental.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @rental.ended %>
+</p>
+
+<p>
+  <strong>End by:</strong>
+  <%= @rental.end_by %>
+</p>
+
+<p>
+  <strong>Late fee:</strong>
+  <%= @rental.late_fee %>
+</p>
+
+<%= link_to 'Edit', edit_rental_path(@rental) %> |
+<%= link_to 'Back', rentals_path %>

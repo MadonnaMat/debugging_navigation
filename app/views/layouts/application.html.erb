@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DebuggingNavigation</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <%= link_to "Rentals", rentals_path %>
+    <%= link_to "Drivers", drivers_path %>
+    <%= link_to "Cars", cars_path %>
+  </header>
+<%= yield %>
+
+</body>
+</html>
