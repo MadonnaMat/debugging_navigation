@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :driver_id %><br>
-    <%= f.collection_select :driver_id, Driver.all, :id, :name %>
+    <%= f.collection_select :driver_id, Driver.no_rentals, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :car_id %><br>
-    <%= f.collection_select :car_id, Car.all, :id, :name %>
+    <%= f.collection_select :car_id, Car.no_rentals, :id, :name %>
   </div>
   <% if @rental.new_record? %>
     <div class="field">
